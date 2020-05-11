@@ -6,7 +6,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #persistent
 Return
 
-#Check for clipboard changes and make each word capitalised
+;Check for clipboard changes and make each word capitalised
 OnClipboardChange:
 Clipboard:=RegExReplace(clipboard, "\b[a-zA-Z]", "$U0")
 Return
